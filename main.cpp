@@ -9,10 +9,10 @@ int main() {
     cin >> numOfClasses;
     for (int i = 0; i < numOfClasses; i++) {
         int grade = 0;
-        cout << "Vendos noten qe ke marr ne lenden " << i;
+        cout << "Vendos noten qe ke marr ne lenden " << i+1 << ": ";
         cin >> grade;
         totalSum += grade;
     }
-    int avg = totalSum / numOfClasses;
-    cout << "Nota mesatare eshte: " << avg;
+    float avg = totalSum / numOfClasses;
+    cout << "Nota mesatare eshte: " << avg << endl;
 }
